@@ -18,19 +18,53 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-    pass
+    '''
+    (str) -> boolean
+
+    Funcion que valida si la secuencia en la cadena de ADN es valida
+
+
+
+    :param adn: La cadena que se ingresa a evaluar
+    :return: True si la cadena de ADN es valida, False si no se cumple
+    '''
 
 
 def es_base(caracter):
-    pass
+    '''
+    (str) -> boolean
+
+    Funcion que recibe un caracter y verifica si es base o no
+
+    :param caracter: El caracter que sera validado
+    :return: True es base o False no es base
+    '''
 
 
 def es_subcadena(adn1, adn2):
-    pass
+    '''
+    (list of str) -> boolean
+
+    Funcion que recibe dos cadenas y valida si una es una subcadena de la otra
+
+
+    :param adn1: Recibe la cadena 1
+    :param adn2: Recibe la cadena 2
+    :return: True si es subcadena o False sino es subcadena
+    '''
 
 
 def reparar_dano(adn, base):
-    pass
+    '''
+
+    (list of str, list of str) -> str
+
+    Funcion que reemplaza los elementos no correspondientes con una base dada
+
+    :param adn: Recibe el adn que se corregira
+    :param base: Recibe la base dada
+    :return: Corrige los elementos no correspondientes con la base dada
+    '''
 
 
 def obtener_secciones(adn, n):
