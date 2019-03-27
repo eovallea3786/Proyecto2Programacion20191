@@ -18,14 +18,27 @@ def corresponden(adn1, adn2):
 
 
 def es_cadena_valida(adn):
-    pass
+
+    # Recorremos lo que nos llegue en ADN
+    for base in adn:
+        # validamos si con la funcion es_base
+        if not es_base(base):
+            # si no es base, retorna false
+            return False
+    # De lo contrario retornamos True
+    return True
 
 
 def es_base(caracter):
-    pass
+
+    #Retornamos true o false pasa saber si es o no es una base
+    return caracter.upper() in "ATCG"
+
 
 
 def es_subcadena(adn1, adn2):
+    for adn1 in adn2
+
     pass
 
 
