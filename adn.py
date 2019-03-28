@@ -98,17 +98,45 @@ def reparar_dano(adn, base):
 
 
 def obtener_secciones(adn, n):
+    """
+    (list of str, cantidad de datos a partir de la primera)  -> str
+
+    Funcion que recibe una cadena y de acuerdo a n, obtiene la sección a partir del primer dato de la lista
+
+    :param adn: Recibe el adn del cual se obtendra una seccion
+    :param n: Recibe la cantidad de caracteres a partir del primero
+    :return: Cadena de caracteres con la sección deseada
+    """
     pass
 
 
 def obtener_complementos(lista_adn):
+    """
+    str -> str
+
+    Funcion que recibe una cadena y se obitenen los complementos a partir de esta
+
+    :param lista_adn: Recibre un adn al cual se le buscaran los complementos
+    :return: lista complementaria
+    """
     pass
 
 
 def unir_cadena(lista_adn):
+    """
+    str
+
+    :param lista_adn: une cadena
+    :return: cadena de caracteres
+    """
     pass
 
 
 def complementar_cadenas(lista_adn):
-    pass
+    """
+    str
 
+    :param lista_adn: recibe una cadena
+    :return: cadena de caracteres
+    """
+    pass
