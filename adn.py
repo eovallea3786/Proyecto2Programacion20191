@@ -96,6 +96,7 @@ def es_base(caracter):
 
     :param caracter:
     :return:
+
     """
     pass
 
