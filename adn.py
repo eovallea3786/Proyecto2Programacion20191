@@ -1,16 +1,33 @@
 def obtener_complemento(base):
-    # retorna caracter
-    pass
-
+    # si base es A, Retorna T
+    if base == 'A':
+        return 'T'
+    # si base es T, Retorna A
+    elif base == 'T':
+        return 'A'
+    # si base es G, Retorna C
+    elif base == 'G':
+        return 'C'
+    # si base es C, Retorna G
+    elif base == 'C':
+        return 'G'
+    # de los contrario retorna que la letra no es una base
+    else:
+        raise ValueError(base + " No es una base")
 
 def generar_cadena_complementaria(adn):
-    pass
-
+    # Obteniendo el complento de una cadena de ADN
+    resultado = ""
+    # recorre adn
+    for base in adn:
+        # a resultado le adicionamos el complemento de la letra
+        resultado += obtener_complemento(base)
+    # retornamos el resultado
+    return resultado
 
 def calcular_correspondencia(adn1, adn2):
-    # retorna num
-    pass
-
+    # Verificando si la base dos es el complemento de la base uno.
+    return adn1 == obtener_complemento(adn2)
 
 def corresponden(adn1, adn2):
     # retorna Bool
