@@ -67,10 +67,36 @@ def corresponden(adn1, adn2):
     '''
 
 def es_cadena_valida(adn):
-    pass
+    '''
+    >>> es_cadena_valida('ATATTACGGC')
+    True
+
+    >>> es_cadena_valida('FTATTACGGC')
+    False
+
+    >>> es_cadena_valida('')
+    False
+
+
+    :param adn:
+    :return:
+    '''
 
 
 def es_base(caracter):
+    """
+    >>> es_base('A')
+    True
+
+    >>> es_base('T')
+    True
+
+    >>> es_base('')
+    False
+
+    :param caracter:
+    :return:
+    """
     pass
 
 
