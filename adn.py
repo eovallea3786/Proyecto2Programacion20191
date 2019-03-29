@@ -5,8 +5,6 @@ Documentación: David
 """
 def obtener_complemento(base):
     '''
-
-
     >>> obtener_complemento('A')
     'T'
     >>> obtener_complemento('G')
@@ -30,7 +28,6 @@ Documentación: David
 
 def generar_cadena_complementaria(adn):
     '''
-
     >>> generar_cadena_complementaria('ATGC')
     'TACG'
     >>> generar_cadena_complementaria('GATC')
