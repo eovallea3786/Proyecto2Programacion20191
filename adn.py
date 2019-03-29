@@ -5,6 +5,16 @@ Documentación: David
 """
 def obtener_complemento(base):
 
+    """
+    (str) -> str
+    'Recibe una letra y retorna su complemento'
+
+    :param base: Un valor de una cadena de ADN
+    :return: El complemento de la candena del ADN
+    """
+    # retorna caracter
+    pass
+
     '''
     >>> obtener_complemento('A')
     'T'
@@ -28,6 +38,7 @@ Documentación: David
 """
 
 def generar_cadena_complementaria(adn):
+
     '''
     >>> generar_cadena_complementaria('ATGC')
     'TACG'
@@ -46,7 +57,25 @@ Pruebas: Johan
 Documentación: David
 """
 
+    """
+    (str) ->  boolean
+    'Recibe una cadena de ADN y se retorna el complento de dicha cadena'
+
+    :param adn: Se recibe una cadena
+    :return: El complemento de dicha cadena
+    """
+    pass
+
+
 def calcular_correspondencia(adn1, adn2):
+    """
+    (string, string)->number
+
+    Funcion que calcula el porcentaje de correspondencia de una cadena y otra
+    :param adn1: La primera cadena que voy a comparar
+    :param adn2 La segunda cadena que voy a comprar
+    :return: numbre: el porcentaje de acertividad o un mensaje
+    """
     # retorna num
     '''
 
@@ -97,6 +126,14 @@ def calcular_correspondencia(adn1, adn2):
     return adn1 == obtener_complemento(adn2)
 
 def corresponden(adn1, adn2):
+    """
+    str -> boolean
+
+    'recibe dos bases y verifica si la una es el complemento de la otra'
+    :param adn1: Se introduce primer parametro
+    :param adn2: Se introduce segundo parametro
+    :return: Se retorna si son complementos o no
+    """
     # retorna Bool
     '''
     >>> corresponden('A','T')
@@ -116,6 +153,17 @@ Documentación: Johan
 """
 
 def es_cadena_valida(adn):
+
+    '''
+    (str) -> boolean
+
+    Funcion que valida si la secuencia en la cadena de ADN es valida
+
+
+
+    :param adn: La cadena que se ingresa a evaluar
+    :return: True si la cadena de ADN es valida, False si no se cumple
+    '''
 
     '''
     >>> es_cadena_valida('ATATTACGGC')
@@ -142,8 +190,17 @@ def es_cadena_valida(adn):
     '''
 
 def es_base(caracter):
+
     #Retornamos true o false pasa saber si es o no es una base
     return caracter.upper() in "ATCG"
+    '''
+    (str) -> boolean
+
+    Funcion que recibe un caracter y verifica si es base o no
+
+    :param caracter: El caracter que sera validado
+    :return: True es base o False no es base
+    '''
 
 """
 Desarrollo: David
@@ -186,6 +243,16 @@ Documentación: Johan
 """
 def es_subcadena(adn1, adn2):
     for adn1 in adn2
+    '''
+    (list of str) -> boolean
+
+    Funcion que recibe dos cadenas y valida si una es una subcadena de la otra
+
+
+    :param adn1: Recibe la cadena 1
+    :param adn2: Recibe la cadena 2
+    :return: True si es subcadena o False sino es subcadena
+    '''
 
     pass
 
@@ -195,7 +262,16 @@ Pruebas: Edward
 Documentación: Johan
 """
 def reparar_dano(adn, base):
-    pass
+    '''
+
+    (list of str, list of str) -> str
+
+    Funcion que reemplaza los elementos no correspondientes con una base dada
+
+    :param adn: Recibe el adn que se corregira
+    :param base: Recibe la base dada
+    :return: Corrige los elementos no correspondientes con la base dada
+    '''
 
 """
 Desarrollo: Johan
@@ -203,6 +279,15 @@ Pruebas: David
 Documentación: Edward
 """
 def obtener_secciones(adn, n):
+    """
+    (list of str, cantidad de datos a partir de la primera)  -> str
+
+    Funcion que recibe una cadena y de acuerdo a n, obtiene la sección a partir del primer dato de la lista
+
+    :param adn: Recibe el adn del cual se obtendra una seccion
+    :param n: Recibe la cantidad de caracteres a partir del primero
+    :return: Cadena de caracteres con la sección deseada
+    """
     pass
 
 """
@@ -211,6 +296,14 @@ Pruebas: David
 Documentación: Edward
 """
 def obtener_complementos(lista_adn):
+    """
+    str -> str
+
+    Funcion que recibe una cadena y se obitenen los complementos a partir de esta
+
+    :param lista_adn: Recibre un adn al cual se le buscaran los complementos
+    :return: lista complementaria
+    """
     pass
 
 """
@@ -219,6 +312,12 @@ Pruebas: David
 Documentación: Edward
 """
 def unir_cadena(lista_adn):
+    """
+    str
+
+    :param lista_adn: une cadena
+    :return: cadena de caracteres
+    """
     pass
 
 """
@@ -227,5 +326,10 @@ Pruebas: David
 Documentación: Edward
 """
 def complementar_cadenas(lista_adn):
-    pass
+    """
+    str
 
+    :param lista_adn: recibe una cadena
+    :return: cadena de caracteres
+    """
+    pass
