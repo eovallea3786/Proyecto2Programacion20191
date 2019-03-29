@@ -1,3 +1,8 @@
+"""
+Desarrollo: Edward
+Pruebas: Johan
+Documentación: David
+"""
 def obtener_complemento(base):
     '''
 
@@ -17,10 +22,14 @@ def obtener_complemento(base):
     :return:
     '''
 
+"""
+Desarrollo: Edward
+Pruebas: Johan
+Documentación: David
+"""
 
 def generar_cadena_complementaria(adn):
     '''
-
 
     >>> generar_cadena_complementaria('ATGC')
     'TACG'
@@ -33,11 +42,15 @@ def generar_cadena_complementaria(adn):
     :return:
     '''
 
+"""
+Desarrollo: Edward
+Pruebas: Johan
+Documentación: David
+"""
 
 def calcular_correspondencia(adn1, adn2):
     # retorna num
     '''
-
 
     >>> calcular_correspondencia('ATATTACGGC','TATAATGCCG')
     100.0
@@ -51,11 +64,15 @@ def calcular_correspondencia(adn1, adn2):
     :return:
     '''
 
+"""
+Desarrollo: Edward
+Pruebas: Johan
+Documentación: David
+"""
+
 def corresponden(adn1, adn2):
     # retorna Bool
     '''
-
-
     >>> corresponden('A','T')
     True
     >>> corresponden('G','T')
@@ -65,6 +82,12 @@ def corresponden(adn1, adn2):
     :param adn2:
     :return:
     '''
+
+"""
+Desarrollo: David
+Pruebas: Edward
+Documentación: Johan
+"""
 
 def es_cadena_valida(adn):
     '''
@@ -82,6 +105,11 @@ def es_cadena_valida(adn):
     :return:
     '''
 
+"""
+Desarrollo: David
+Pruebas: Edward
+Documentación: Johan
+"""
 
 def es_base(caracter):
     """
@@ -90,37 +118,72 @@ def es_base(caracter):
 
     >>> es_base('T')
     True
-
-    >>> es_base('')
+    
+    >>> es_base('G')
+    True
+    
+    >>> es_base('C')
+    True
+    
+    >>> es_base('B')
     False
+    
+    >>> es_base('')
+    Traceback (most recent call last):
+     ...
+    ValueError: '' La cadena no puede ser vacia
+    
 
     :param caracter:
     :return:
 
     """
-    pass
 
-
+"""
+Desarrollo: David
+Pruebas: Edward
+Documentación: Johan
+"""
 def es_subcadena(adn1, adn2):
     pass
 
-
+"""
+Desarrollo: David
+Pruebas: Edward
+Documentación: Johan
+"""
 def reparar_dano(adn, base):
     pass
 
-
+"""
+Desarrollo: Johan
+Pruebas: David
+Documentación: Edward
+"""
 def obtener_secciones(adn, n):
     pass
 
-
+"""
+Desarrollo: Johan
+Pruebas: David
+Documentación: Edward
+"""
 def obtener_complementos(lista_adn):
     pass
 
-
+"""
+Desarrollo: Johan
+Pruebas: David
+Documentación: Edward
+"""
 def unir_cadena(lista_adn):
     pass
 
-
+"""
+Desarrollo: Johan
+Pruebas: David
+Documentación: Edward
+"""
 def complementar_cadenas(lista_adn):
     pass
 
