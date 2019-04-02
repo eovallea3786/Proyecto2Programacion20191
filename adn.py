@@ -139,51 +139,45 @@ def es_base(caracter):
 
     """
 
-"""
-Desarrollo: David
-Pruebas: Edward
-Documentación: Johan
-"""
+
 def es_subcadena(adn1, adn2):
     pass
 
-"""
-Desarrollo: David
-Pruebas: Edward
-Documentación: Johan
-"""
+
 def reparar_dano(adn, base):
     pass
 
-"""
-Desarrollo: Johan
-Pruebas: David
-Documentación: Edward
-"""
+
 def obtener_secciones(adn, n):
-    pass
+    """
+    >>> obtener_secciones('ATATAT', 2)
+    ['ATA', 'TAT']
+    >>> obtener_secciones('ATGCTA', 3)
+    ['AT', 'GC', 'TA']
+    """
 
-"""
-Desarrollo: Johan
-Pruebas: David
-Documentación: Edward
-"""
 def obtener_complementos(lista_adn):
-    pass
+    """
+    >>> obtener_complementos(['AAA', 'AGT', 'AAA'])
+    ['TTT', 'TCA', 'TTT']
+    >>> obtener_complementos(['AGT', 'ATG', 'aaa'])
+    ['TCA', 'TAC', 'ttt']
+    """
 
-"""
-Desarrollo: Johan
-Pruebas: David
-Documentación: Edward
-"""
 def unir_cadena(lista_adn):
-    pass
+    """
+    >>> unir_cadena(['ATCGTA', 'TAGCAT'])
+    'ATCGTATAGCT'
+    >>> unir_cadena(['GCAT', 'CGTA'])
+    'GCTACGTA'
+    """
 
-"""
-Desarrollo: Johan
-Pruebas: David
-Documentación: Edward
-"""
 def complementar_cadenas(lista_adn):
-    pass
+
+    """
+    >>> complementar_cadenas(['AAA', 'TTT', 'CCC'])
+    'TTTAAAGGG'
+    >>> complementar_cadenas(['AGT', 'GCC', 'TTT'])
+    'TCACGGAAA'
+    """
 
