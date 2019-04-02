@@ -52,15 +52,28 @@ def es_base(caracter):
     return caracter.upper() in "ATCG"
 
 
-
 def es_subcadena(adn1, adn2):
-    for adn1 in adn2
 
-    pass
+    if not es_cadena_valida(adn2):
+        raise ValueError('NO NUMEROS')
+    if not es_cadena_valida(adn1):
+        raise ValueError('NO NUMEROS')
+    if adn2 in adn1:
+        return True
+    elif adn2 not in adn1:
+        return False
 
 
 def reparar_dano(adn, base):
-    pass
+
+    if int == type(complementaria):
+        raise TypeError('LOS NUMEROS NO SON VALIDOS')
+    if not es_cadena_valida(complementaria):
+        raise TypeError(complementaria + ' NO ES UNA CADENA VALIDA')
+    if corresponden(adn, complementaria):
+        return "LAS CADENAS CONCUERDAN"
+    elif not corresponden(adn, complementaria):
+        return generar_cadena_complementaria(adn)
 
 
 def obtener_secciones(adn, n):
