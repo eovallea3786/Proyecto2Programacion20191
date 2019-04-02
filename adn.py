@@ -12,6 +12,7 @@ def obtener_complemento(base):
     Traceback (most recent call last):
      ...
     ValueError: Z no es una base
+
     :param base: Un valor de una cadena de ADN
     :return: El complemento de la candena del ADN
     """
@@ -40,6 +41,7 @@ def generar_cadena_complementaria(adn):
     'CTAG'
     >>> generar_cadena_complementaria('CA')
     'GT'
+
     :param adn: Se recibe una cadena
     :return: El complemento de dicha cadena
     """
@@ -65,6 +67,7 @@ def calcular_correspondencia(adn1, adn2):
     20.0
     >>> calcular_correspondencia('TTGGAACC','ACTA')
     'Las cadenas no tienen la misma longitud'
+
     :param adn1: La primera cadena que voy a comparar
     :param adn2 La segunda cadena que voy a comparar
     :return: num: el porcentaje de acertividad o un mensaje
@@ -98,6 +101,7 @@ def corresponden(adn1, adn2):
     True
     >>> corresponden('G','T')
     False
+
     :param adn1: Se introduce primer parametro
     :param adn2: Se introduce segundo parametro
     :return: Se retorna si son complementos o no
@@ -114,6 +118,7 @@ def es_cadena_valida(adn):
     False
     >>> es_cadena_valida('ATATTACGGC')
     True
+
     :param adn: La cadena que se ingresa a evaluar
     :return: True si la cadena de ADN es valida, False si no se cumple
     '''
@@ -140,6 +145,7 @@ def es_base(caracter):
     True
     >>> es_base('B')
     False
+
     :param caracter: El caracter que sera validado
     :return: True es base o False no es base
     '''
@@ -154,6 +160,7 @@ def es_subcadena(adn1, adn2):
     True
     >>> es_subcadena('TCGA', 'AAT')
     False
+
     :param adn1: str Primer Cadena
     :param adn2: str Segunda Cadena
     :return: Retorna la subcadena de la primer cadena
@@ -171,6 +178,7 @@ def reparar_dano(adn, complementaria):
     'ATGPPP'
     >>> reparar_dano('ATGCCC', 'G')
     'ATGCCC'
+
     :param adn: str Cadena principal
     :param complementaria: str Caracter para corregir
     :return: str Cadena corregida
@@ -194,6 +202,7 @@ def obtener_secciones(adn, n):
     ['a', 't', 'ata']
     >>> obtener_secciones('ATGCTACAG', 2)
     ['ATGC', 'TACAG']
+
     :param adn: Cadena de ADN
     :param n: Numero de secciones que se quiere dividir
     :return: Resultado de la cadena por secciones
@@ -224,6 +233,7 @@ def obtener_complementos(lista_adn):
     ['TTT', 'GCG', 'TTT']
     >>> obtener_complementos(['AGT', 'GTA', 'AAA'])
     ['TCA', 'CAT', 'TTT']
+
     :param lista_adn: lista de ADN
     :return: Representa una lista de ADN complementario
     """
@@ -240,6 +250,7 @@ def unir_cadena(lista_adn):
     'CGTAATTA'
     >>> unir_cadena(['GC', 'GCATTT'])
     'GCGCATTT'
+
     :param lista_adn: Lista de ADN ingresadas
     :return: Union de las cadenas
     """
@@ -258,6 +269,7 @@ def complementar_cadenas(lista_adn):
     'CGGGCC'
     >>> complementar_cadenas(['AT','GTA','CC'])
     'TACATGG'
+
     :param Lista_adn: Lista de ADN ingresada
     :return: Complementos de la lista ingresada
     """
