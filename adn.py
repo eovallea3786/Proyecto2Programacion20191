@@ -12,8 +12,8 @@ def obtener_complemento(base):
 
 def generar_cadena_complementaria(adn):
     """
-    (str) ->  boolean
-    'Recibe una cadena de ADN y se retorna el complento de dicha cadena'
+    (str) ->  str
+   'Recibe una cadena de ADN y se retorna el complemento de dicha cadena'
 
     :param adn: Se recibe una cadena
     :return: El complemento de dicha cadena
@@ -23,7 +23,7 @@ def generar_cadena_complementaria(adn):
 
 def calcular_correspondencia(adn1, adn2):
     """
-    (string, string)->number
+    (str, str)-> number
 
     Funcion que calcula el porcentaje de correspondencia de una cadena y otra
     :param adn1: La primera cadena que voy a comparar
@@ -87,56 +87,63 @@ def es_subcadena(adn1, adn2):
 def reparar_dano(adn, base):
     '''
 
-    (list of str, list of str) -> str
+    (str, str) -> str
 
-    Funcion que reemplaza los elementos no correspondientes con una base dada
+    Obtiene dos cadenas y valida si corresponden sino las corrige
 
-    :param adn: Recibe el adn que se corregira
-    :param base: Recibe la base dada
-    :return: Corrige los elementos no correspondientes con la base dada
-    '''
+    :param adn: str Cadena principal
+    :param complementaria: str Caracter para corregir
+    :return: str Cadena corregida
+    """
 
 
 def obtener_secciones(adn, n):
     """
-    (list of str, cantidad de datos a partir de la primera)  -> str
+    (str, int) -> list of str
 
-    Funcion que recibe una cadena y de acuerdo a n, obtiene la sección a partir del primer dato de la lista
+    Valida cada seccion de una cadena
 
-    :param adn: Recibe el adn del cual se obtendra una seccion
-    :param n: Recibe la cantidad de caracteres a partir del primero
-    :return: Cadena de caracteres con la sección deseada
+    :param adn: Cadena de ADN
+    :param n: Numero de secciones que se quiere dividir
+    :return: Resultado de la cadena por secciones
     """
     pass
 
 
 def obtener_complementos(lista_adn):
     """
-    str -> str
 
-    Funcion que recibe una cadena y se obitenen los complementos a partir de esta
+    (list of str) -> list of str
 
-    :param lista_adn: Recibre un adn al cual se le buscaran los complementos
-    :return: lista complementaria
+    Recibe una lista de adn y devuelve la lista de adn complementaria
+
+    :param lista_adn: lista de ADN
+    :return: Representa una lista de ADN complementario
     """
     pass
 
 
 def unir_cadena(lista_adn):
     """
-    str
+    (list of str) -> str
 
-    :param lista_adn: une cadena
-    :return: cadena de caracteres
+    Funcion que une todas las cadenas ingresadas
+
+    :param lista_adn: Lista de ADN ingresadas
+    :return: Union de las cadenas
     """
     pass
 
 
 def complementar_cadenas(lista_adn):
     """
-    str
 
-    :param lista_adn: recibe una cadena
-    :return: cadena de caracteres
+    Funcion que complenta las lista de ADN ingresadas
+
+    (list of str) -> str
+
+    
+    :param Lista_adn: Lista de ADN ingresada
+    :return: Complementos de la lista ingresada
     """
     pass
