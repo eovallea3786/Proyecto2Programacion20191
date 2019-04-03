@@ -12,3 +12,10 @@ for ln in texto:
     cadenas = ln.strip().split(',')
 print(funciones.es_cadena_valida(cadena_texto))
 print(funciones.obtener_complementos(cadena_texto))
+print(funciones.calcular_correspondencia(cadenas[0], [1]))
+
+archivo1 = open('archivo2.txt', 'w')
+archivo1.write(cadena_texto+"\n")
+archivo.close()
+adn = open('archivo2.txt', 'r')
+texto = adn.readlines()
