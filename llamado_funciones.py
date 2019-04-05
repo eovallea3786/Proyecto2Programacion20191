@@ -10,6 +10,6 @@ adn = open('archivo.txt', 'r')
 texto = adn.readlines()
 for ln in texto:
     cadenas = ln.strip().split(',')
-    print(funciones.calcular_correspondencia(cadenas[0], cadenas[1]))
+print(funciones.calcular_correspondencia(cadenas[0], cadenas[1]))
 
 
